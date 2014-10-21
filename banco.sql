@@ -32,7 +32,7 @@ create table avaliacaoCurso(
 	datahora timestamp,
 	cargaHoraria int(2),
 	grade int(2),
-	atividadesPraticas int(2),
+	confianca int(2), #o quao confiante se sente para aplicar o que aprendeu no mercado de trabalho
 	comentario text,
 	foreign key (cursoId) references curso (id)
 );

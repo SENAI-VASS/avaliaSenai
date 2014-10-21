@@ -4,7 +4,8 @@
 
 .form-avaliacao label{
     display: block;
-	background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
 	color: #666;
     padding: 4px; 
 	margin-bottom: 10px;
@@ -15,7 +16,7 @@
 .form-avaliacao input[type="radio"]:checked + label {
     background-color:#295095;
     color: #fff;
-    border-left: 10px solid #426cb5;
+    /*border-left: 10px solid #426cb5;*/
 }
 
 .form-avaliacao .descricao{
