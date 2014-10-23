@@ -1,14 +1,14 @@
-<?php include_once( "header.php"); ?>
+<?php include_once( "header.php"); include_once("conexao.php"); ?>
 
 <div class="container">
-    <form class="form-avaliacao">
+    <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
 
         <div class="form-group">
             <!-- Copie este bloco para adicionar mais critérios-->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Carga horária</h3>
+                    <h3>Carga horária <small>A quantidade total de horas do curso foi suficiente?</small></h3>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Grade</h3>
+                    <h3>Grade <small>O que achou do conteúdo do curso?</small> </h3>
                 </div>
             </div>
 
@@ -128,14 +128,14 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Aulas práticas</h3>
+                    <h3>Confiança <small>Se sente seguro para aplicar o que aprendeu no SENAI no mercado de trabalho?</small></h3>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-2">
-                    <input type="radio" name="aulas_praticas" id="aulas_praticas1" value="5">
-                    <label for="aulas_praticas1">Excelente</label>
+                    <input type="radio" name="confianca" id="confianca1" value="5">
+                    <label for="confianca1">Excelente</label>
                 </div>
                 <div class="col-md-10">
                     <div class="descricao">Descrição</div>
@@ -144,8 +144,8 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <input type="radio" name="aulas_praticas" id="aulas_praticas2" value="4">
-                    <label for="aulas_praticas2">Bom</label>
+                    <input type="radio" name="confianca" id="confianca2" value="4">
+                    <label for="confianca2">Bom</label>
                 </div>
                 <div class="col-md-10">
                     <div class="descricao">Descrição</div>
@@ -154,8 +154,8 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <input type="radio" name="aulas_praticas" id="aulas_praticas3" value="3">
-                    <label for="aulas_praticas3">Regular</label>
+                    <input type="radio" name="confianca" id="confianca3" value="3">
+                    <label for="confianca3">Regular</label>
                 </div>
                 <div class="col-md-10">
                     <div class="descricao">Descrição</div>
@@ -164,8 +164,8 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <input type="radio" name="aulas_praticas" id="aulas_praticas4" value="2">
-                    <label for="aulas_praticas4">Ruim</label>
+                    <input type="radio" name="confianca" id="confianca4" value="2">
+                    <label for="confianca4">Ruim</label>
                 </div>
                 <div class="col-md-10">
                     <div class="descricao">Descrição</div>
@@ -174,8 +174,8 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <input type="radio" name="aulas_praticas" id="aulas_praticas5" value="1">
-                    <label for="aulas_praticas5">Péssimo</label>
+                    <input type="radio" name="confianca" id="confianca5" value="1">
+                    <label for="confianca5">Péssimo</label>
                 </div>
                 <div class="col-md-10">
                     <div class="descricao">Descrição</div>
@@ -183,10 +183,12 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group">　
             <h3>Comentário</h3>
-            <textarea class="form-control"></textarea>
+            <textarea name="comentario" class="form-control"></textarea>
         </div>
+        
+        <input type="hidden" name="avaliacao" value="curso">
 
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Concluir</button>

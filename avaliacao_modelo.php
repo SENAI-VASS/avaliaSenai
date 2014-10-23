@@ -7,7 +7,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Critério</h2>
+          <h3>Critério <small>Subtítulo</small></h3>
         </div>
       </div>
 

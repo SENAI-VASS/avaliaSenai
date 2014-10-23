@@ -1,3 +1,5 @@
+create database avaliacao;
+
 create table curso(
 	id int(6) primary key auto_increment,
 	nome varchar(60),
@@ -42,15 +44,15 @@ create table avaliacaoProfessor(
 	profId int(6),
 	cursoId int(6),
 	datahora timestamp,
-	pontualid	ade int(2),
+	pontualidade int(2),
 	frequencia int(2),
 	dominioDaDisciplina int(2),
 	clarezaNaExplicacao int(2),
 	habilidadeDeEstimularAlunos int(2),
 	instrumentosDeAvaliacao int(2),
 	comentario text,
-	foreign key (profId) references profesor (id),
-	foreign key (cursoid) references curso (id)
+	foreign key (profId) references professor (id),
+	foreign key (cursoId) references curso (id)
 );
 
 create table avaliacaoLaboratorio(
@@ -106,10 +108,8 @@ create table avaliacaoBiblioteca(
 
 create table relatorioAvaliacao(
 	id int(10) primary key auto_increment,
-	alunoMatricula int(6),
+	alunoId int(6),
 	item varchar(60),
 	dia date,
-	foreign key (alunoMatricula) references aluno (matricula)
+	foreign key (alunoId) references aluno (id)
 );
-
-
