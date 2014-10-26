@@ -1,6 +1,6 @@
 <?php include_once("header.php"); ?>
 
-<form class="form-horizontal" role="form" action="grava_professor.php">
+<form class="form-horizontal" role="form" action="grava_professor.php" method="post">
   <div class="form-group">
     <label for="nome" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-10">
