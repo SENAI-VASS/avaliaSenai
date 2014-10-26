@@ -1,5 +1,3 @@
-create database avaliacao;
-
 create table curso(
 	id int(6) primary key auto_increment,
 	nome varchar(60),
@@ -13,11 +11,11 @@ create table professor(
 );
 
 create table cursoTemProfessor(
-	id int(6) primary key auto_increment,
 	cursoId int(6),
 	profId int(6),
 	foreign key (cursoId) references curso (id),
-	foreign key (profId) references professor (id)
+	foreign key (profId) references professor (id),
+	primary key (cursoId, profId)
 );
 
 create table aluno(

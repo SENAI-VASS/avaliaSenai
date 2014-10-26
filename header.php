@@ -31,7 +31,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Sistema de Avaliação</a>
+        <a class="navbar-brand" href="index.php">Sistema de Avaliação</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

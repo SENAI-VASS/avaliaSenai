@@ -91,7 +91,7 @@
 
             $inicio = ($pagina * $limite) - $limite;
 
-            $query = mysqli_query($conexao, "SELECT * FROM curso LIMIT $inicio, $limite");
+            $query = mysqli_query($conexao, "SELECT * FROM curso ORDER BY encerramento DESC LIMIT $inicio, $limite ");
 
             while( $curso = mysqli_fetch_array($query) ){ ?>
 
@@ -106,6 +106,30 @@
         </tbody>
         
     </table>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="pagination">
+          <?php
+            $query = "SELECT codigo FROM curso";
+            
+            $sql = mysqli_query($conexao, $query);
+
+            $numlinhas = mysqli_num_rows($sql);
+
+            $numpaginas = Ceil($numlinhas / $limite);
+
+            for($pag = 1; $pag <= $numpaginas; $pag++){ ?>
+            
+            <li>
+              <a href="cadastro_curso.php?pag=<?php echo $pag?>"><?php echo $pag ?></a>
+            </li>
+            
+          <?php } ?>
+        </ul>
+      </div>
+    </div>
+    
     
 </div>
 
