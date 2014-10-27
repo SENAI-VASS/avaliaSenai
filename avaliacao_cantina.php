@@ -375,7 +375,7 @@
             <textarea name="comentario" class="form-control"></textarea>
         </div>
         
-        <input type="hidden" name="avaliacao" value="curso">
+        <input type="hidden" name="avaliacao" value="cantina">
 
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Concluir</button>

@@ -370,6 +370,8 @@
       <h3>Comentário</h3>
       <textarea class="form-control"></textarea>
     </div>
+    
+    <input type="hidden" name="avaliacao" value="professor">
 
     <div class="form-group">
       <button type="submit" class="btn btn-primary">Concluir</button>

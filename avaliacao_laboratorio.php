@@ -369,6 +369,8 @@
       <h3>Comentário</h3>
       <textarea class="form-control"></textarea>
     </div>
+    
+    <input type="hidden" name="avaliacao" value="laboratorio">
     <!-- COMENTÁRIO -->
 
     <!-- BOTÃO CONCLUIR -->
