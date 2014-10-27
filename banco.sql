@@ -21,6 +21,7 @@ create table cursoTemProfessor(
 create table aluno(
 	id int(6) primary key auto_increment,
 	matricula varchar(20),
+	senha varchar(20),
 	nome varchar(60),
 	cursoId int(6),
 	foreign key (cursoId) references curso (id)

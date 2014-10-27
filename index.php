@@ -55,6 +55,8 @@ include_once("conexao.php");
      </div>
     </div>
     
-    
   </div>
 </div>
+
+
+<?php include_once("footer.php"); ?>

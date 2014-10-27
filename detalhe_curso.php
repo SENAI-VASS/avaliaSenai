@@ -28,7 +28,6 @@ while( $aluno = mysqli_fetch_array($query) ){ ?>
           <?php } ?>
 
         </tbody>
-
       </table>
     </div>
 
@@ -47,6 +46,7 @@ while( $professores = mysqli_fetch_array($query) ){
           ?>
           <tr>
             <td><a href="#"><?php echo $professor["nome"]?></a></td>
+            <td><a href="remove_professor_curso.php?prof=<?php echo $professor['id'] ?>&curso=<?php echo $curso_id ?>"><i class="fa fa-trash-o"> Remover</i></a></td>
           </tr>
           <?php } } ?>
         </tbody>
