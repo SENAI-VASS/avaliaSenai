@@ -5,6 +5,17 @@ $curso_id = $_GET['id'];
 ?>
 
 <div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     <?php 
+      $query = mysqli_query($conexao, "SELECT nome FROM curso WHERE id = $curso_id");
+
+      $curso = mysqli_fetch_array($query); 
+     ?>
+     
+     <h2><?php echo $curso['nome'] ?></h2>
+   </div>
+ </div>
   <div class="row">
     <div class="col-md-6">
       <h3>Alunos</h3>
@@ -52,7 +63,7 @@ while( $professores = mysqli_fetch_array($query) ){
         </tbody>
       </table>
 
-      <form action="detalhe_curso.php" class="form form-horizontal"method="post">
+      <form action="adiciona_professor_curso.php" class="form form-horizontal" method="post">
         <div class="form-group">
           <label for="professor" class="control-label col-sm-2">Professor</label>
           <div class="col-sm-8">
@@ -65,6 +76,7 @@ while($professor = mysqli_fetch_array($query)){ ?>
           </div>
 
           <input type="hidden" value="<?php echo $curso_id ?>" name="curso">
+          
           <div class="col-sm-2">
             <button type="submit" class="btn btn-primary">Adicionar</button>
           </div>
@@ -77,12 +89,5 @@ while($professor = mysqli_fetch_array($query)){ ?>
 
 </div>
 
-<?php if(isset($_POST["professor"])){
-  $prof_id = $_POST["professor"];
-  $curso_id = $_POST["curso"];
-  $query = mysqli_query($conexao, "INSERT INTO cursoTemProfessor (cursoId, profId) VALUES ($curso_id, $prof_id) ");
+<?php include_once("footer.php") ?>
 
-  header("location: detalhe_curso.php?id=".$curso_id);
-}
-
-?>

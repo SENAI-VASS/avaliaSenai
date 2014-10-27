@@ -1,6 +1,11 @@
-    <?php include_once( "header.php"); ?>
+    <?php include_once("header.php"); include_once("seguranca.php");?>
 
 <div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     <h3>Cantina</h3>
+   </div>
+ </div>
   <form class="form-avaliacao">
 	
 	

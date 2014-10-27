@@ -1,9 +1,21 @@
 <?php include_once("conexao.php"); 
 
-  $maticula = $_POST['matricula'];
-  $senha = $_POST['senha'];
+$matricula = $_POST['matricula'];
+$senha = $_POST['senha'];
 
-  $query = mysqli_query($conexao, "SELECT * FROM aluno");
+$query = mysqli_query($conexao, "SELECT * FROM aluno WHERE matricula = $matricula AND senha = $senha");
+
+if( mysqli_num_rows($query) ){
+  $aluno = mysqli_fetch_array($query);
+  session_start();
+  $_SESSION['aluno_id'] = $aluno['id'];
+  $_SESSION['curso_id'] = $aluno['cursoId'];
+  $_SESSION['aluno_nome'] = $aluno['nome'];
+
+  header("location: index.php");
+}else{
+  header("location: login.php");
+}
 
 ?>
 

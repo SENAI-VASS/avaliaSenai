@@ -1,11 +1,20 @@
 <?php 
 include_once("header.php");
 include_once("conexao.php");
-
+include_once("seguranca.php");
 ?>
 
 
 <div class="container">
+
+<div class="row">
+  <div class="col-md-12">
+    <h4>Bem vindo, <?php echo $_SESSION['aluno_nome'] ?></h4>
+  </div>
+</div>
+ 
+
+ 
   <div class="row">
     <div class="col-md-12">
       <h1>O que deseja avaliar?</h1>
@@ -16,7 +25,7 @@ include_once("conexao.php");
     <div class="col-md-3 col-sm-6">
      <div class="avaliacao-opcao">
        <h2>Professores</h2>
-        <a href="avaliacao_professor.php" class="btn btn-primary">Avaliar</a>
+        <a href="lista_professores_avaliacao.php" class="btn btn-primary">Avaliar</a>
      </div>
     </div>
     

@@ -8,7 +8,7 @@ include_once("conexao.php");?>
         <div class="form-group">
             <label for="matricula" class="col-sm-2 control-label">Matrícula</label>
             <div class="col-sm-2">
-                <input type="email" name="matricula" class="form-control" id="matricula" placeholder="Matrícula">
+                <input type="text" name="matricula" class="form-control" id="matricula" placeholder="Matrícula">
             </div>
         </div>
         <div class="form-group">

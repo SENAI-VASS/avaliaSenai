@@ -1,6 +1,21 @@
-<?php include_once( "header.php"); include_once("conexao.php"); ?>
+<?php include_once("header.php"); include_once("seguranca.php"); include_once("conexao.php");
+
+$curso_id = $_SESSION['curso_id'];
+
+$query = mysqli_query($conexao, "SELECT * FROM curso WHERE id = $curso_id ");
+
+$curso = mysqli_fetch_array($query);
+
+?>
 
 <div class="container">
+   
+   <div class="row">
+   <div class="col-md-12">
+     <h3>Curso de <?php echo $curso['nome'] ?></h3>
+   </div>
+ </div>
+   
     <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
 
         <div class="form-group">

@@ -1,6 +1,19 @@
-<?php include_once( "header.php"); include_once( "conexao.php"); ?>
+<?php include_once("header.php"); include_once("seguranca.php"); include_once("conexao.php");
+
+  $prof_id = $_GET['id'];
+
+  $query = mysqli_query($conexao, "SELECT * FROM professor WHERE id = $prof_id");
+
+  $professor = mysqli_fetch_array($query);
+
+?>
 
 <div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     <h3>Professor <?php echo $professor['nome'] ?></h3>
+   </div>
+ </div>
   <form class="form-avaliacao">
 
     <div class="form-group">

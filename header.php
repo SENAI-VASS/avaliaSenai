@@ -52,6 +52,10 @@
               </ul>
             </li>
           </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sair.php">Sair</a></li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
