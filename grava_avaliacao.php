@@ -68,9 +68,9 @@ if($avaliacao == "curso"){
   $climatizacao = $_POST["climatizacao"];
   $iluminacao = $_POST["iluminacao"];
   $comentario = $_POST["comentario"];
-  
+
   mysqli_query($conexao, "INSERT INTO avaliacaoBiblioteca (datahora, cursoId, acessibilidade, acervo, espacoFisico, limpeza, equipamentos, climatizacao, iluminacao, comentario) values (NOW(), $acessibilidade, $acervo, $espacoFisico, $limpeza, $equipamentos, $climatizacao, $iluminacao, $comentario)");
-  
+
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'biblioteca', CURRENT_DATE()) ");
 
 }else if($avaliacao == "banheiro"){
@@ -79,9 +79,9 @@ if($avaliacao == "curso"){
   $materialHigiene = $_POST["materialHigiene"];
   $quantidade = $_POST["quantidade"];
   $comentario = $_POST["comentario"];
-  
+
   mysqli_query($conexao, "INSERT INTO avaliacaoBanheiro (datahora, acessibilidade, limpeza, materialHigiene, quantidade, comentario) values (NOW(), $acessibilidade, $limpeza, $materialHigiene, $quantidade, '$comentario' ) ");
-  
+
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'banheiro', CURRENT_DATE()) ");
 }
 
