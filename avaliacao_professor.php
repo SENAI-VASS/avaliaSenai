@@ -15,7 +15,8 @@
    </div>
  </div>
   <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
-  <input type="hidden" name="professor" value="<?php echo $prof_id ?>"
+  
+  <input type="hidden" name="professor" value="<?php echo $prof_id ?>">
 
     <div class="form-group">
       <!-- Copie este bloco para adicionar mais critérios-->
