@@ -12,23 +12,14 @@
 
       <div class="row">
         <div class="col-md-12">
-<<<<<<< HEAD
-          <h3>acessibilidade <small>Como está a acessibilidade ?</small></h3>
-=======
           <h3>Acessibilidade <small>Como está a acessibilidade?</small></h3>
->>>>>>> d4e217dee5d47e514097e09f3adcb9ab4c2a12b1
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-<<<<<<< HEAD
-          <input type="radio" name="acessibilidade" id="Acessibilidade1" value="5">
-          <label for="Acessibilidade">Excelente</label>
-=======
           <input type="radio" name="acessibilidade" id="acessibilidade1" value="5">
           <label for="acessibilidade1">Excelente</label>
->>>>>>> d4e217dee5d47e514097e09f3adcb9ab4c2a12b1
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou muito satisfeito com a acessibilidade.</div>
