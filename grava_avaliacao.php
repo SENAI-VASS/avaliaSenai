@@ -15,7 +15,7 @@ if($avaliacao == "curso"){
 
   mysqli_query($conexao, 
                "INSERT INTO avaliacaoCurso (cursoId, datahora, cargaHoraria, grade, confianca, comentario) 
-        values ( $curso_id, NOW(), $cargaHoraria, $grade, $confianca, '$comentario'");
+        values ( $curso_id, NOW(), $cargaHoraria, $grade, $confianca, '$comentario') ");
 
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'curso', CURRENT_DATE()) ");  
 
@@ -29,9 +29,10 @@ if($avaliacao == "curso"){
   $instrumentos = $_POST["instrumentos_de_avaliacao"];
   $comentario = $_POST["comentario"];
 
-  mysqli_query($conexao, "INSERT INTO avaliacaoProfessor (profId, cursoId, datahora, pontualidade, frequencia, dominioDaDisciplina, clarezaNaExplicacao, habilidadeDeEstimularAlunos, instrumentosDeAvaliacao, comentario) values ($prof_id, $curso_id, NOW(), $pontualidade, $frequencia, $dominioDisciplina, $clarezaExplicacao, $habilidadeEstimular, $instrumentos, $comentario ) ");
+  mysqli_query($conexao, "INSERT INTO avaliacaoProfessor (profId, cursoId, datahora, pontualidade, frequencia, dominioDaDisciplina, clarezaNaExplicacao, habilidadeDeEstimularAlunos, instrumentosDeAvaliacao, comentario) values ($prof_id, $curso_id, NOW(), $pontualidade, $frequencia, $dominioDisciplina, $clarezaExplicacao, $habilidadeEstimular, $instrumentos, '$comentario' ) ");
 
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacaoProfessor (alunoId, profId, dia) values ($aluno_id, $prof_id, CURRENT_DATE()) ");
+
 
 }else if($avaliacao == "laboratorio" ){
   $acessibilidade = $_POST["acessibilidade"];
@@ -42,7 +43,7 @@ if($avaliacao == "curso"){
   $iluminacao = $_POST["iluminacao"];
   $comentario = $_POST["comentario"];
 
-  mysqli_query($conexao, "INSERT INTO avaliacaoLaboratio (cursoId, datahora, acessibilidade, espacoFisico, limpeza, recursos, climatizacao, iluminacao, comentario) values ($curso_id, NOW(), $acessibilidade, $espacoFisico, $limpeza, $recursos, $climatizacao, $iluminacao, '$comentario')");
+  mysqli_query($conexao, "INSERT INTO avaliacaoLaboratio (cursoId, datahora, acessibilidade, espacoFisico, limpeza, recursos, climatizacao, iluminacao, comentario) values ($curso_id, NOW(), $acessibilidade, $espacoFisico, $limpeza, $recursos, $climatizacao, $iluminacao, '$comentario') ");
 
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'laboratorio', CURRENT_DATE()) ");
 
@@ -84,5 +85,6 @@ if($avaliacao == "curso"){
 
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'banheiro', CURRENT_DATE()) ");
 }
+
 
 ?>
