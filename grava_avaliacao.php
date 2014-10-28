@@ -86,5 +86,7 @@ if($avaliacao == "curso"){
   mysqli_query($conexao, "INSERT INTO relatorioAvaliacao (alunoId, item, dia) values ($aluno_id, 'banheiro', CURRENT_DATE()) ");
 }
 
+header("location: index.php");
+
 
 ?>

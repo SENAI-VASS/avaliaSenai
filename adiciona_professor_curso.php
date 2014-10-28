@@ -7,7 +7,7 @@
 
   $query = mysqli_query($conexao, "INSERT INTO cursoTemProfessor (cursoId, profId) VALUES ($curso_id, $prof_id) ");
 
-  header("location: detalhe_curso.php?id=$curso_id");
+  header("location: gerencia_curso.php?id=$curso_id");
 
 
 ?>

@@ -1,3 +1,78 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.footer {
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.sidebar{
+  position: fixed;
+top: 51px;
+bottom: 0px;
+left: 0px;
+z-index: 1000;
+display: block;
+padding: 20px;
+overflow-x: hidden;
+overflow-y: auto;
+background-color: #F5F5F5;
+border-right: 1px solid #EEE;
+}
+.nav-sidebar{
+  margin-right: -21px;
+margin-bottom: 20px;
+margin-left: -20px;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+    color: #FFF;
+    background-color: #428BCA;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #EEE;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+a:hover, a:focus {
+    color: #2A6496;
+    text-decoration: underline;
+}
+a {
+    color: #428BCA;
+    text-decoration: none;
+}
+a {
+    background: none repeat scroll 0px 0px transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .avaliacao-opcao{
   border: 1px solid #e5e5e5;
   padding: 0px 10px 10px 10px;
@@ -11,21 +86,21 @@
 }
 
 .form-avaliacao label{
-    display: block;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-	color: #666;
-    padding: 4px; 
-	margin-bottom: 10px;
-	font-size: 1em;
-    text-align: center;
-    cursor: pointer;
+  display: block;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  color: #666;
+  padding: 4px; 
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
 }
 
 .form-avaliacao input[type="radio"]:checked + label {
-    background-color:#295095;
-    color: #fff;
-    /*border-left: 10px solid #426cb5;*/
+  background-color:#295095;
+  color: #fff;
+  /*border-left: 10px solid #426cb5;*/
 }
 
 .form-avaliacao .descricao{
@@ -33,9 +108,12 @@
   padding-top: 4px;
 }
 
+
+
+
 @media screen and (max-width: 768px){
   .form-avaliacao .descricao {
-   padding-bottom:35px;
-   text-align: center
- }
+    padding-bottom:35px;
+    text-align: center
+  }
 }

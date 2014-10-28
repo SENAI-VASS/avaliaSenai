@@ -1,93 +1,110 @@
-<?php include_once("header.php");
-include_once("conexao.php");
+<?php include_once("header_admin.php"); include_once("conexao.php"); 
+include_once("seguranca_admin.php"); include_once("funcoes.php");
 
-$curso_id = $_GET['id'];
+$navbar_opcao = "curso";
+$curso_id = $_GET["id"];
+
+$query = mysqli_query($conexao, "SELECT * FROM curso WHERE id = $curso_id");
+
+$curso = mysqli_fetch_array($query);
 ?>
 
-<div class="container">
- <div class="row">
-   <div class="col-md-12">
-     <?php 
-      $query = mysqli_query($conexao, "SELECT nome FROM curso WHERE id = $curso_id");
-
-      $curso = mysqli_fetch_array($query); 
-     ?>
-     
-     <h2><?php echo $curso['nome'] ?></h2>
-   </div>
- </div>
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <h3>Alunos</h3>
-      <table class="table">
-        <th>Nome</th>
-        <th>Matrícula</th>  
 
-        <tbody>
+    <?php include_once("dashboard_sidebar.php") ?>
 
-          <?php
-
-$query = mysqli_query($conexao, "SELECT * FROM aluno WHERE cursoId = $curso_id ORDER BY nome ASC");
-
-while( $aluno = mysqli_fetch_array($query) ){ ?>
-
-          <tr>
-            <td><a href="detalhe_aluno.php?id=<?php echo $aluno['id'] ?>"><?php echo $aluno["nome"]?></a></td>
-            <td><?php echo $aluno["matricula"]?></td>
-          </tr>
-
-          <?php } ?>
-
-        </tbody>
-      </table>
-    </div>
-
-    <div class="col-md-6">
-      <h3>Professores</h3>
-      <table class="table">
-        <th>Nome</th>
-        <th></th> 
-
-        <tbody>
-          <?php $query = mysqli_query($conexao, "SELECT profId FROM cursoTemProfessor WHERE cursoId = $curso_id");
-while( $professores = mysqli_fetch_array($query) ){
-  $prof_id = $professores['profId'];
-  $query2 = mysqli_query($conexao, "SELECT * FROM professor WHERE id = $prof_id"); 
-  while( $professor = mysqli_fetch_array($query2) ){
-          ?>
-          <tr>
-            <td><a href="#"><?php echo $professor["nome"]?></a></td>
-            <td><a href="remove_professor_curso.php?prof=<?php echo $professor['id'] ?>&curso=<?php echo $curso_id ?>"><i class="fa fa-trash-o"> Remover</i></a></td>
-          </tr>
-          <?php } } ?>
-        </tbody>
-      </table>
-
-      <form action="adiciona_professor_curso.php" class="form form-horizontal" method="post">
-        <div class="form-group">
-          <label for="professor" class="control-label col-sm-2">Professor</label>
-          <div class="col-sm-8">
-            <select name="professor" id="professor" class="form-control">
-              <?php $query = mysqli_query($conexao, "SELECT * FROM professor ORDER BY nome ASC"); 
-while($professor = mysqli_fetch_array($query)){ ?>
-              <option value="<?php echo $professor['id'] ?>"><?php echo $professor['nome'] ?></option>
-              <?php }   ?>
-            </select>
-          </div>
-
-          <input type="hidden" value="<?php echo $curso_id ?>" name="curso">
-          
-          <div class="col-sm-2">
-            <button type="submit" class="btn btn-primary">Adicionar</button>
-          </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="row">
+        <div class="col-md-12">
+          <h4><?php echo $curso['nome'] ?></h4>
         </div>
-      </form>
+      </div>
 
+      <div class="row">
+        <div class="col-md-2">
+          <h3>Carga horária</h3>
+          <h1><?php obterMedia('avaliacaoCurso','cargaHoraria'); ?></h1>
+        </div>
+        <div class="col-md-2">
+          <h3>Excelente</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','cargaHoraria', 5); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Bom</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','cargaHoraria', 4); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Regular</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','cargaHoraria', 3); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Ruim</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','cargaHoraria', 2); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Péssimo</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','cargaHoraria', 1); ?></h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-2">
+          <h3>Grade</h3>
+          <h1><?php obterMedia('avaliacaoCurso','grade'); ?></h1>
+        </div>
+        <div class="col-md-2">
+          <h3>Excelente</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','grade', 5); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Bom</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','grade', 4); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Regular</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','grade', 3); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Ruim</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','grade', 2); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Péssimo</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','grade', 1); ?></h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-2">
+          <h3>Confiança</h3>
+          <h1><?php obterMedia('avaliacaoCurso','confianca'); ?></h1>
+        </div>
+        <div class="col-md-2">
+          <h3>Excelente</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','confianca', 5); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Bom</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','confianca', 4); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Regular</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','confianca', 3); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Ruim</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','confianca', 2); ?></h4>
+        </div>
+        <div class="col-md-2">
+          <h3>Péssimo</h3>
+          <h4><?php echo obterNumVotos('avaliacaoCurso','confianca', 1); ?></h4>
+        </div>
+      </div>
+      
     </div>
   </div>
 
-
 </div>
 
-<?php include_once("footer.php") ?>
-
+<?php include_once("footer_admin.php"); ?>

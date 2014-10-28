@@ -37,9 +37,15 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">    
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="sair.php">Sair</a></li>
-          </ul>
+          <form class="navbar-form navbar-right" action="entrar.php" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="matricula" placeholder="Matrícula">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="senha" placeholder="Senha">
+            </div>
+            <button type="submit" class="btn btn-success">Entrar</button>
+          </form>
         </div>
         <!-- /.navbar-collapse -->
       </div>

@@ -27,6 +27,13 @@ create table aluno(
 	foreign key (cursoId) references curso (id)
 );
 
+create table administrador(
+	id int(6) primary key auto_increment,
+	email varchar(60) unique,
+	senha varchar(30),
+	nome varchar(60)
+);
+
 create table avaliacaoCurso(
 	id int(10) primary key auto_increment,
 	cursoId int(6),
