@@ -12,14 +12,14 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Acessibilidade <small>Como está a acessibilidade ?</small></h3>
+          <h3>Acessibilidade <small>Como está a acessibilidade?</small></h3>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade1" value="5">
-          <label for="Acessibilidade">Excelente</label>
+          <input type="radio" name="acessibilidade" id="acessibilidade1" value="5">
+          <label for="acessibilidade1">Excelente</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou muito satisfeito com a acessibilidade.</div>
@@ -28,8 +28,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade2" value="4">
-          <label for="Acessibilidade2">Bom</label>
+          <input type="radio" name="acessibilidade" id="acessibilidade2" value="4">
+          <label for="acessibilidade2">Bom</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou satisfeito com a acessibilidade.</div>
@@ -38,8 +38,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade3" value="3">
-          <label for="Acessibilidade3">Regular</label>
+          <input type="radio" name="acessibilidade" id="acessibilidade3" value="3">
+          <label for="acessibilidade3">Regular</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
@@ -48,8 +48,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade4" value="2">
-          <label for="Acessibilidade4">Ruim</label>
+          <input type="radio" name="acessibilidade" id="acessibilidade4" value="2">
+          <label for="acessibilidade4">Ruim</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">A acessibilidade deixa a desejar.</div>
@@ -58,8 +58,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade5" value="1">
-          <label for="Acessibilidade5">Péssimo</label>
+          <input type="radio" name="acessibilidade" id="acessibilidade5" value="1">
+          <label for="acessibilidade5">Péssimo</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">A acessibilidade deixa muito a desejar.</div>
@@ -73,34 +73,34 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Variedades <small>O que achá da varidade de produtos ?</small></h3>
+          <h3>Variedades <small>O que acha da variedade de produtos?</small></h3>
         </div>
       </div>
  
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Variedades" id="Variedades1" value="5">
-          <label for="Variedades1">Excelente</label>
+          <input type="radio" name="variedades" id="variedades1" value="5">
+          <label for="variedades1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou muito satisfeito com as variedades de  produtos.</div>
+          <div class="descricao">Estou muito satisfeito com a variedade de produtos.</div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Variedades" id="Variedades2" value="4">
-          <label for="Variedades2">Bom</label>
+          <input type="radio" name="variedades" id="variedades2" value="4">
+          <label for="variedades2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com as variedades de produtos.</div>
+          <div class="descricao">Estou satisfeito com a variedade de produtos.</div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Variedades" id="Variedades3" value="3">
-          <label for="Variedades3">Regular</label>
+          <input type="radio" name="variedades" id="variedades3" value="3">
+          <label for="variedades3">Regular</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
@@ -109,8 +109,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Variedades" id="Variedades4" value="2">
-          <label for="Variedades4">Ruim</label>
+          <input type="radio" name="variedades" id="variedades4" value="2">
+          <label for="variedades4">Ruim</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">São poucas as variedades.</div>
@@ -119,8 +119,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Variedades" id="Variedades5" value="1">
-          <label for="Variedades5">Péssimo</label>
+          <input type="radio" name="variedades" id="variedades5" value="1">
+          <label for="variedades5">Péssimo</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">São muito poucas as variedades.</div>
@@ -136,14 +136,14 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Preços <small>Como estão os preços ?</small></h3>
+          <h3>Preços <small>Como estão os preços?</small></h3>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Precos"  id="Precos1" value="5">
-          <label for="Precos1">Excelente</label>
+          <input type="radio" name="precos"  id="precos1" value="5">
+          <label for="precos1">Excelente</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou muito satisfeito com os preços.</div>
@@ -152,8 +152,8 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Precos" id="Precos2" value="4">
-          <label for="Precos2">Bom</label>
+          <input type="radio" name="precos" id="precos2" value="4">
+          <label for="precos2">Bom</label>
         </div>
         <div class="col-md-10">
           <div class="descricao">Estou satisfeito com os preços.</div>
@@ -162,31 +162,31 @@
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Precos" id="Precos3" value="3">
-          <label for="Precos3">Regular</label>
+          <input type="radio" name="precos" id="precos3" value="3">
+          <label for="precos3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com os preços. Porém não seria mal se melhorasse.</div>
+          <div class="descricao">Estou satisfeito com os preços. Porém, não seria mal se melhorasse.</div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Precos" id="Precos4" value="2">
-          <label for="Precos4">Ruim</label>
+          <input type="radio" name="precos" id="precos4" value="2">
+          <label for="precos4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou insastifeito com os preços.</div>
+          <div class="descricao">Estou insatisfeito com os preços.</div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Precos" id="Precos5" value="1">
-          <label for="Precos5">Péssimo</label>
+          <input type="radio" name="precos" id="precos5" value="1">
+          <label for="precos5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou muito insastifeito com os preços.</div>
+          <div class="descricao">Estou muito insatisfeito com os preços.</div>
         </div>
       </div>
     </div>    

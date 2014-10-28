@@ -15,7 +15,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Acessibilidade<small> O acesso ao banheiro e facilitado a qualquer tipo de pessoa ?</small></h3>
+          <h3>Acessibilidade<small> O acesso ao banheiro é facilitado a qualquer tipo de pessoa?</small></h3>
         </div>
       </div>
 
@@ -25,7 +25,7 @@
           <label for="acessibilidade1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> é de facil acesso a qualquer público e bem localizado </div>
+          <div class="descricao">É de fácil acesso a qualquer público e bem localizado.</div>
         </div>
       </div>
 
@@ -35,7 +35,7 @@
           <label for="acessibilidade2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> é bem locaziado </div>
+          <div class="descricao">É bem localizado.</div>
         </div>
       </div>
 
@@ -45,7 +45,7 @@
           <label for="acessibilidade3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> é bem localizado porém não é acessível a qualquer público</div>
+          <div class="descricao">É bem localizado. Porém, não é acessível a qualquer público.</div>
         </div>
       </div>
 
@@ -55,7 +55,7 @@
           <label for="acessibilidade4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> é mal localizado </div>
+          <div class="descricao">É mal localizado.</div>
         </div>
       </div>
 
@@ -65,7 +65,7 @@
           <label for="acessibilidade5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> é mal localizado e de díficil acesso </div>
+          <div class="descricao">É mal localizado e de díficil acesso.</div>
         </div>
       </div>
     </div>   
@@ -74,7 +74,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Limpeza<small> O banheiro se encontra bem higiênizado ?</small></h3>
+          <h3>Limpeza<small> O banheiro se encontra bem higienizado?</small></h3>
         </div>
       </div>
 
@@ -84,7 +84,7 @@
           <label for="limpeza1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> se encontra bem limpo e higiênizado </div>
+          <div class="descricao">Se encontra bem limpo e higienizado.</div>
         </div>
       </div>
 
@@ -94,7 +94,7 @@
           <label for="limpeza2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> se encontra limpo </div>
+          <div class="descricao">Se encontra limpo.</div>
         </div>
       </div>
 
@@ -104,7 +104,7 @@
           <label for="limpeza3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> se encontra limpo porém poderia ser melhor </div>
+          <div class="descricao">Se encontra limpo. Porém, poderia ser melhor.</div>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
           <label for="limpeza4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> não se encontra limpo</div>
+          <div class="descricao">Não se encontra limpo.</div>
         </div>
       </div>
 
@@ -124,7 +124,7 @@
           <label for="limpeza5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> se encontra em condições improprias para uso </div>
+          <div class="descricao">Se encontra em condições impróprias para uso.</div>
         </div>
       </div>
     </div> 
@@ -133,7 +133,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Material de higiêne <small> Os materias de higiêne são de boa qualidade ? </small></h3>
+          <h3>Material de higiene<small> Os materias de higiene são de boa qualidade?</small></h3>
         </div>
       </div>
 
@@ -143,7 +143,7 @@
           <label for="materialHigiene1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> são de ótima qualidade </div>
+          <div class="descricao">São de ótima qualidade.</div>
         </div>
       </div>
 
@@ -153,7 +153,7 @@
           <label for="materialHigiene2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> são ideais para uso </div>
+          <div class="descricao">São ideais para uso.</div>
         </div>
       </div>
 
@@ -163,7 +163,7 @@
           <label for="materialHigiene3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> são de qualidade regular </div>
+          <div class="descricao">São de qualidade regular.</div>
         </div>
       </div>
 
@@ -173,7 +173,7 @@
           <label for="materialHigiene4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> não são de uma qualidade apresentavel </div>
+          <div class="descricao">Não são de boa qualidade.</div>
         </div>
       </div>
 
@@ -183,7 +183,7 @@
           <label for="materialHigiene5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> são de pessíma qualidade </div>
+          <div class="descricao">São de péssima qualidade.</div>
         </div>
       </div>
     </div> 
@@ -192,7 +192,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>A quantidade de banheiros <small> A quantidade de banheiros é suficiente para todos ? </small></h3>
+          <h3>Quantidade de banheiros<small> A quantidade de banheiros é suficiente para todos?</small></h3>
         </div>
       </div>
 
@@ -202,7 +202,7 @@
           <label for="quantidade1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> há uma quantidade acessivel a todos </div>
+          <div class="descricao">Há mais do que o suficiente.</div>
         </div>
       </div>
 
@@ -212,7 +212,7 @@
           <label for="quantidade2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> há uma quantidade suficiente </div>
+          <div class="descricao">Há uma quantidade suficiente.</div>
         </div>
       </div>
 
@@ -222,7 +222,7 @@
           <label for="quantidade3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> há uma quantidade regular , pois nao atende a todos  </div>
+          <div class="descricao">Há uma quantidade suficiente. Porém, poderia ser melhor.</div>
         </div>
       </div>
 
@@ -232,7 +232,7 @@
           <label for="quantidade4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> a quantidade de banheiros nao atende a todos </div>
+          <div class="descricao">A quantidade de banheiros não atende a todos.</div>
         </div>
       </div>
 
@@ -242,7 +242,7 @@
           <label for="quantidade5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao"> nao há banheiros suficiente para todos  </div>
+          <div class="descricao">Não há banheiros suficientes para todos.</div>
         </div>
       </div>
     </div> 	

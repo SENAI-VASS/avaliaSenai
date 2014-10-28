@@ -12,7 +12,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Acessibilidade <small>Existem facilitadores para portadores de necessidades especiais ?</small></h3>
+          <h3>Acessibilidade <small>Existem facilitadores para portadores de necessidades especiais?</small></h3>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
           <label for="acessibilidade3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com a acessibilidade. Porém, não seria mal  se a mesma melhorasse.</div>
+          <div class="descricao">Estou satisfeito com a acessibilidade. Porém, não seria mal se a mesma melhorasse.</div>
         </div>
       </div>
 
@@ -72,7 +72,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Acervo <small>O que você acha do nosso acervo ?</small></h3>
+          <h3>Acervo <small>O que você acha do nosso acervo?</small></h3>
         </div>
       </div>
 
@@ -92,7 +92,7 @@
           <label for="acervo2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com o acervo</div>
+          <div class="descricao">Estou satisfeito com o acervo.</div>
         </div>
       </div>
 
@@ -102,7 +102,7 @@
           <label for="acervo3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com o acervo, Porém, não seria mal se o mesmo melhorasse.</div>
+          <div class="descricao">Estou satisfeito com o acervo. Porém, não seria mal se o mesmo melhorasse.</div>
         </div>
       </div>
 
@@ -132,7 +132,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Espaço fisico <small>O que você acha do espaço fisica da biblioteca ?</small></h3>
+          <h3>Espaço físico <small>O que você acha do espaço físico da biblioteca?</small></h3>
         </div>
       </div>
 
@@ -142,7 +142,7 @@
           <label for="espaco_fisico1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou muito satisfeito com o espaço fisico.</div>
+          <div class="descricao">Estou muito satisfeito com o espaço físico.</div>
         </div>
       </div>
 
@@ -152,7 +152,7 @@
           <label for="espaco_fisico2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito com o espaço fisico.</div>
+          <div class="descricao">Estou satisfeito com o espaço físico.</div>
         </div>
       </div>
 
@@ -162,7 +162,7 @@
           <label for="espaco_fisico3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito. Porém não seria mal se melhorasse.</div>
+          <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
         </div>
       </div>
 
@@ -172,7 +172,7 @@
           <label for="espaco_fisico4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">O espaço fisico deixou a desejar.</div>
+          <div class="descricao">O espaço físico deixou a desejar.</div>
         </div>
       </div>
 
@@ -182,7 +182,7 @@
           <label for="espaco_fisico5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">O espaço fisico deixou muito a desejar.</div>
+          <div class="descricao">O espaço físico deixou muito a desejar.</div>
         </div>
       </div>
     </div>
@@ -192,7 +192,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Limpeza <small>O que você acha da limpeza ?</small></h3>
+          <h3>Limpeza <small>O que você acha da limpeza?</small></h3>
         </div>
       </div>
 
@@ -252,7 +252,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Equipamentos <small>O que você acha dos equipamentos ?</small></h3>
+          <h3>Equipamentos <small>O que você acha dos equipamentos?</small></h3>
         </div>
       </div>
 
@@ -282,7 +282,7 @@
           <label for="equipamento3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito. Porém não seria mal se melhorasse.</div>
+          <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
         </div>
       </div>
 
@@ -312,7 +312,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Climatização <small>O que você acha da climatização ?</small></h3>
+          <h3>Climatização <small>O que você acha da climatização?</small></h3>
         </div>
       </div>
 
@@ -342,7 +342,7 @@
           <label for="climatizacao3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Estou satisfeito. Porém não seria mal se melhorasse.</div>
+          <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
         </div>
       </div>
 
@@ -372,7 +372,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Iluminação <small>O que você acha da iluminação ?</small></h3>
+          <h3>Iluminação <small>O que você acha da iluminação?</small></h3>
         </div>
       </div>
 
