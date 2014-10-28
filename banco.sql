@@ -71,23 +71,27 @@ create table avaliacaoLaboratorio(
 create table avaliacaoCantina(
 	id int(10) primary key auto_increment,
 	datahora timestamp,
+	cursoId int(6),
 	acessibilidade int(2),
 	variedade int(2),
 	precos int(2),
 	atendimento int(2),
 	horarioFuncionamento int(2),
 	limpeza int(2),
-	comentario text
+	comentario text,
+	foreign key (cursoId) references curso (id)
 );
 
 create table avaliacaoBanheiro(
 	id int(10) primary key auto_increment,
 	datahora timestamp,
+	cursoId int(6),
 	acessibilidade int(2),
 	limpeza int(2),
 	materialHigiene int(2),
 	quantidade int(2),
-	comentario text
+	comentario text,
+	foreign key (cursoId) references curso (id)
 );
 
 create table avaliacaoBiblioteca(
