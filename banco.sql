@@ -112,3 +112,12 @@ create table relatorioAvaliacao(
 	dia date,
 	foreign key (alunoId) references aluno (id)
 );
+
+create table relatorioAvaliacaoProfessor(
+	id int(10) primary key auto_increment,
+	alunoId int(6),
+	profId int(6),
+	dia date,
+	foreign key (alunoId) references aluno (id),
+	foreign key (profId) references professor (id) 
+);

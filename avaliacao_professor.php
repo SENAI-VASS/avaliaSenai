@@ -14,7 +14,8 @@
      <h3>Professor <?php echo $professor['nome'] ?></h3>
    </div>
  </div>
-  <form class="form-avaliacao">
+  <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
+  <input type="hidden" name="professor" value="<?php echo $prof_id ?>"
 
     <div class="form-group">
       <!-- Copie este bloco para adicionar mais critérios-->
@@ -334,7 +335,7 @@
           <label for="instrumentos_de_avaliacao1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Estou muito satisfeito com os instrumentos de avaliações.</div>
         </div>
       </div>
 
@@ -344,7 +345,7 @@
           <label for="instrumentos_de_avaliacao2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Estou satisfeito com os instrumentos avaliações.</div>
         </div>
       </div>
 
@@ -354,7 +355,7 @@
           <label for="instrumentos_de_avaliacao3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Estou satisfeito. Porém, não seria mal se melhorasse.</div>
         </div>
       </div>
 
@@ -364,7 +365,7 @@
           <label for="instrumentos_de_avaliacao4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Não respondeu as expectativas.</div>
         </div>
       </div>
 
@@ -374,14 +375,14 @@
           <label for="instrumentos_de_avaliacao5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Não respondeu em nada as expectativas.</div>
         </div>
       </div>
     </div>
 
     <div class="form-group">
       <h3>Comentário</h3>
-      <textarea class="form-control"></textarea>
+      <textarea name="comentario" class="form-control"></textarea>
     </div>
     
     <input type="hidden" name="avaliacao" value="professor">

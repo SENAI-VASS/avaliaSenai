@@ -6,11 +6,8 @@
      <h3>Cantina</h3>
    </div>
  </div>
-  <form class="form-avaliacao">
-	
-	
-	
-	
+    <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
+
 	<div class="form-group"><!-- Copie este bloco para adicionar mais critérios-->
 
       <div class="row">

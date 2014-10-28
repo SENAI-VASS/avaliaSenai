@@ -6,7 +6,7 @@
      <h3>Laboratórios</h3>
    </div>
  </div>
-  <form class="form-avaliacao">
+    <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
 
     <!-- ACESSIBILIDADE -->
     <div class="form-group">
@@ -372,7 +372,7 @@
     <!-- COMENTÁRIO -->
     <div class="form-group">
       <h3>Comentário</h3>
-      <textarea class="form-control"></textarea>
+      <textarea name="comentario" class="form-control"></textarea>
     </div>
     
     <input type="hidden" name="avaliacao" value="laboratorio">

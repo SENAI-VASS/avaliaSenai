@@ -18,7 +18,7 @@ $curso = mysqli_fetch_array($query);
    
     <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
 
-        <div class="form-group">
+        <form class="form-avaliacao" action="grava_avaliacao.php" method="post">
             <!-- Copie este bloco para adicionar mais critérios-->
 
             <div class="row">
