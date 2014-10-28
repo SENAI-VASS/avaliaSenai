@@ -12,13 +12,13 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h3>Acessibilidade <small>Como está a acessibilidade ?</small></h3>
+          <h3>acessibilidade <small>Como está a acessibilidade ?</small></h3>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2">
-          <input type="radio" name="Acessibilidade" id="Acessibilidade1" value="5">
+          <input type="radio" name="acessibilidade" id="Acessibilidade1" value="5">
           <label for="Acessibilidade">Excelente</label>
         </div>
         <div class="col-md-10">
@@ -126,11 +126,7 @@
           <div class="descricao">São muito poucas as variedades.</div>
         </div>
       </div>
-    </div>    
-	
-		
-	
-	
+    </div>
 	
 	<div class="form-group">
 
