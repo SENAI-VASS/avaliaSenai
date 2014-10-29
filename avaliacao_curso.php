@@ -152,7 +152,7 @@ $curso = mysqli_fetch_array($query);
           <label for="confianca1">Excelente</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Estou extremamente confiante de que estou apto a aplicar o que aprendi no mercado de trabalho.</div>
         </div>
       </div>
 
@@ -162,7 +162,7 @@ $curso = mysqli_fetch_array($query);
           <label for="confianca2">Bom</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Acredito que posso aplicar o que aprendi no mercado de trabalho.</div>
         </div>
       </div>
 
@@ -172,7 +172,7 @@ $curso = mysqli_fetch_array($query);
           <label for="confianca3">Regular</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Acredito que consigo aplicar o que aprendi. Porém, ainda tenho algumas dúvidas.</div>
         </div>
       </div>
 
@@ -182,7 +182,7 @@ $curso = mysqli_fetch_array($query);
           <label for="confianca4">Ruim</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Não tenho certeza de que consigo aplicar o que aprendi.</div>
         </div>
       </div>
 
@@ -192,7 +192,7 @@ $curso = mysqli_fetch_array($query);
           <label for="confianca5">Péssimo</label>
         </div>
         <div class="col-md-10">
-          <div class="descricao">Descrição</div>
+          <div class="descricao">Não acredito ser capaz de aplicar o que aprendi.</div>
         </div>
       </div>
     </div>
