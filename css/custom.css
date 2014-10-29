@@ -4,18 +4,29 @@ html {
 }
 body {
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
+.fundo-login{
+  background-color: transparent!important;
+}
+
 .footer {
   padding-top: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #ccc;
-  height: 60px;
-  background-color: #f5f5f5;
+  border-top: 3px solid #072F65;
+  height: 80px;
+  background-color: #0A4595;
+  color: #e5e5e5;
 }
-
+.linha-logo{
+  height: 80px;
+  line-height: 80px;
+}
+.linha-logo img{
+  padding-bottom: 15px;
+}
 .sidebar{
   position: fixed;
 top: 51px;

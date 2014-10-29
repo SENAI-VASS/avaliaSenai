@@ -52,8 +52,8 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','pontualidade', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-      <div class="row">
+       
+       <div class="row">
         <div class="col-md-2">
           <h3>Frequência</h3>
           <h1><?php obterMediaProfessor('frequencia'); ?></h1>
@@ -79,8 +79,8 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','frequencia', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-      <div class="row">
+       
+       <div class="row">
         <div class="col-md-2">
           <h3>Domínio da Disciplina</h3>
           <h1><?php obterMediaProfessor('dominioDaDisciplina'); ?></h1>
@@ -106,8 +106,8 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','dominioDaDisciplina', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-      <div class="row">
+       
+       <div class="row">
         <div class="col-md-2">
           <h3>Clareza na Explicação</h3>
           <h1><?php obterMediaProfessor('clarezaNaExplicacao'); ?></h1>
@@ -133,8 +133,8 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','clarezaNaExplicacao', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-      <div class="row">
+       
+       <div class="row">
         <div class="col-md-2">
           <h3>Habilidade em estimular alunos</h3>
           <h1><?php obterMediaProfessor('habilidadeDeEstimularAlunos'); ?></h1>
@@ -160,8 +160,8 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','habilidadeDeEstimularAlunos', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-      <div class="row">
+       
+       <div class="row">
         <div class="col-md-2">
           <h3>Instrumentos de avaliação</h3>
           <h1><?php obterMediaProfessor('instrumentosDeAvaliacao'); ?></h1>
@@ -187,9 +187,9 @@ $professor = mysqli_fetch_array($query2);
           <h4><?php echo obterNumVotosProfessor('avaliacaoProfessor','instrumentosDeAvaliacao', 1, $prof_id); ?></h4>
         </div>
       </div>
-
-
-
+        
+      
+      
     </div>
   </div>
 

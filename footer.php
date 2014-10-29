@@ -1,12 +1,17 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-10">
+
+       <div class="col-md-10">
         Desenvolvido pela primeira turma de Progrador Web do SENAI
       </div>
       <div class="col-md-2">
-        <a href="" data-toggle="modal" data-target="#login_admin">Administração</a>
+        <a href="" data-toggle="modal" class="btn btn-primary" data-target="#login_admin">Administração</a>
       </div>
+
+    
+   
+     
     </div>
   </div>
 </footer>
