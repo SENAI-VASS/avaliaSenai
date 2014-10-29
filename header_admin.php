@@ -38,6 +38,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">    
           <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="cadastro_curso.php">Cursos</a></li>
+                <li><a href="cadastro_aluno.php">Alunos</a></li>
+                <li><a href="cadastro_professor.php">Professores</a></li>
+                <li class="divider"></li>
+                <li><a href="cadastro_administrador.php">Administradores</a></li>
+              </ul>
+            </li>
             <li><a href="sair.php">Sair</a></li>
           </ul>
         </div>
